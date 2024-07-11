@@ -1,9 +1,10 @@
 # StateFlow: Enhancing LLM Task-Solving through State-Driven Workflows
 
+:fire: Jul 10, 2024: StateFlow is accepted at [COLM 2024](https://colmweb.org/index.html)!  Our paper can be found here: [https://arxiv.org/abs/2403.11322](https://arxiv.org/abs/2403.11322).
 
-This repository is the implementation of COLM 2024 submission **StateFlow: Enhancing LLM Task-Solving through State-Driven Workflows**. This implementation is based on an open-source LLM framework AutoGen. This version of the code is made to facilitate the peer review of the COLM 2024 submission, and will be removed after. We plan to release the code accompanying the formal publication of the paper.
+:fire: Feb 29, 2024: StateFlow is implemented and integrated into [AutoGen](https://github.com/microsoft/autogen), checkout the [BlogPost](https://microsoft.github.io/autogen/blog/2024/02/29/StateFlow) and the [Notebook](https://github.com/microsoft/autogen/blob/main/notebook/agentchat_groupchat_stateflow.ipynb)!
 
-
+[📚 Cite paper](#citation)
 ## Datasets
 
 - [InterCode](https://github.com/princeton-nlp/intercode): InterCode is designed as an interactive code environments to evaluate language agents that can code. From it, we evaluate StateFlow on two datasets:
@@ -73,8 +74,6 @@ config_list = autogen.config_list_from_json(
     ```
 
 
-
-
 ### Run ALFWorld
 
 1. Please follow the instructions in the [ALFWorld](https://github.com/alfworld/alfworld) repository to install the ALFWorld environment. 
@@ -89,29 +88,41 @@ config_list = autogen.config_list_from_json(
     ```
 
 
+## Citation
+
+If you find this repo helpful, please kindly cite our publication:
+```
+@article{wu2024stateflow,
+  title={StateFlow: Enhancing LLM Task-Solving through State-Driven Workflows},
+  author={Wu, Yiran and Yue, Tianwei and Zhang, Shaokun and Wang, Chi and Wu, Qingyun},
+  journal={arXiv preprint arXiv:2403.11322},
+  year={2024}
+}
+```
+
 ## Results
 
 Results on InterCode SQL:
 
 <!-- ![InterCode SQL](imgs/SQL.png) -->
-<img src="imgs/SQL.png" alt="SQL" width="1000">
+<img src="imgs/SQL.png" alt="SQL" width="900">
 
 
 Results on InterCode Bash:
 
 <!-- ![InterCode Bash](imgs/Bash.png) -->
-<img src="imgs/Bash.png" alt="Bash" width="1000">
+<img src="imgs/Bash.png" alt="Bash" width="900">
 
 
 Results on ALFWorld:
 
 <!-- ![ALFWorld](imgs/ALFWorld.png) -->
-<img src="imgs/ALFWorld.png" alt="ALFWorld" width="1000">
+<img src="imgs/ALFWorld.png" alt="ALFWorld" width="900">
 
 
 Ablation of states on the InterCode SQL dataset with GPT-3.5-Turbo:
 
-<img src="imgs/ablation.png" alt="ablation" width="500">
+<img src="imgs/ablation.png" alt="ablation" width="400">
 
 StateFlow + Reflexion on ALFWorld (with 6 iterations):
 
