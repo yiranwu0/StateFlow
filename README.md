@@ -19,7 +19,7 @@ We recommend create separate environments for InterCode and ALFWorld.
 
 Both benchmarks require the installation of AutoGen:
 ```bash
-pip install pyautogen
+pip install ag2
 ```
 
 Then, create a "OAI_CONFIG_LIST" file and add your key, this will be used to access the LLM models:
