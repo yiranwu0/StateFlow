@@ -1,3 +1,5 @@
+
+
 # StateFlow: Enhancing LLM Task-Solving through State-Driven Workflows
 
 :fire: Jul 10, 2024: StateFlow is accepted at [COLM 2024](https://colmweb.org/index.html)!  Our paper can be found here: [https://arxiv.org/abs/2403.11322](https://arxiv.org/abs/2403.11322).
@@ -27,14 +29,14 @@ Then, create a "OAI_CONFIG_LIST" file and add your key, this will be used to acc
 [
     {
         "model": "gpt-35-turbo-1106",
-        "api_key": "Your openai key here",
+        "api_key": "Your openai key here"
     },
     {
          "model": "gpt-35-turbo-1106",
          "api_key": "Your azure key",
          "api_type": "azure",
          "base_url": "Your base url here",
-         "api_version": "Your api version here",
+         "api_version": "Your api version here"
     }
 ]
 ```
@@ -128,5 +130,3 @@ StateFlow + Reflexion on ALFWorld (with 6 iterations):
 
 <img src="imgs/sf+reflexion.png" alt="Reflexion" width="400">
 <!-- ![Reflexion](imgs/sf+reflexion.png) -->
-
-
